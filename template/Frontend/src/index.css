@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* Custom font faces */
+@font-face {
+  font-family: "Articulat CF";
+  src: url("./assets/fonts/ArticulatCFRegular/font.woff2") format("woff2"),
+    url("./assets/fonts/ArticulatCFRegular/font.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ArticulatCFDemiBold";
+  src: url("./assets/fonts/ArticulatCFDemiBold/font.woff2") format("woff2"),
+    url("./assets/fonts/ArticulatCFDemiBold/font.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Mixta Pro";
+  src: url("./assets/fonts/MixtaProRegularItalic/font.woff2") format("woff2"),
+    url("./assets/fonts/MixtaProRegularItalic/font.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ArticulatCFNormal";
+  src: url("./assets/fonts/ArticulatCFNormal/font.woff2") format("woff2"),
+    url("./assets/fonts/ArticulatCFNormal/font.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SoehneMonoBuch";
+  src: url("./assets/fonts/fonts_sohne/WOFF2/soehne-mono-buch.woff2") format("woff2"),
+    url("./assets/fonts/fonts_sohne/OTF/SöhneMono-Buch.otf") format("otf");
+}
+
+@font-face {
+  font-family: "SoehneMonoLeicht";
+  src: url("./assets/fonts/fonts_sohne/WOFF2/soehne-mono-leicht.woff2") format("woff2"),
+    url("./assets/fonts/fonts_sohne/OTF/SöhneMono-Leicht.otf") format("otf");
+}
+
+@theme {
+  --font-articulat-cf: "Articulat CF", sans-serif;
+  --font-articulatcf-demibold: "ArticulatCFDemiBold", sans-serif;
+  --font-articulat-normal: "ArticulatCFNormal", sans-serif;
+  --font-mixta-pro: "Mixta Pro", sans-serif;
+  --font-sohne-mono-buch: "SoehneMonoBuch", monospace;
+  --font-sohne-mono-leicht: "SoehneMonoLeicht", monospace;
+}
+
+/* Remove conflicting base styles that interfere with Tailwind/DaisyUI */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Theme transition effects */
+* {
+  transition: background-color 200ms ease-in-out,
+    border-color 200ms ease-in-out,
+    color 200ms ease-in-out;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--b2, 210 40% 98%));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--b3, 210 40% 94%));
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--bc, 215 28% 17%) / 0.5);
+}

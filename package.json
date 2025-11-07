@@ -1,0 +1,45 @@
+{
+  "name": "create-fullstack-app",
+  "version": "1.0.0",
+  "description": "A Full Stack Application Comprised of React for Frontend, Express & Sequelize with Node js for Backend to help developers get started on real implementation instead of spending time setting up projects.",
+  "main": "index.js",
+  "bin": {
+    "create-fullstack-app": "index.js"
+  },
+  "preferGlobal": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "template"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhuzaifi0604/react-boilerplate.git"
+  },
+  "keywords": [
+    "fullstack",
+    "boilerplate",
+    "react",
+    "node",
+    "js",
+    "fullstack",
+    "app"
+  ],
+  "dependencies": {
+    "execa": "^5.1.1",
+    "fs-extra": "^11.3.2",
+    "inquirer": "^8.2.7"
+  },
+  "author": "Muhammad Huzaifa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhuzaifi0604/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/mhuzaifi0604/react-boilerplate#readme"
+}
