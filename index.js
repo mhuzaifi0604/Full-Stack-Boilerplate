@@ -51,11 +51,20 @@
     try {
         console.log("\n🎛️  Setting Up Full Stack Project...\n");
 
-        const answers = await mainPrompts();        
+        const answers = await mainPrompts();
         // const templateDir = path.join(__dirname, "template");
         const targetDir = path.join(process.cwd(), answers.projectName);
 
-        await copyProject(templateDir, targetDir);
+        (async () => {
+
+            try {
+                await copyProject(templateDir, targetDir);
+                console.log("✅ Project copied successfully");
+            } catch (err) {
+                console.error("❌ Failed to copy project files:", err.message);
+            }
+        })();
+
         await setupMainDB(targetDir, answers.dbDialect);
         console.log("➡️ Installing backend dependencies...");
         await runInstall(path.join(targetDir, "Backend"));
