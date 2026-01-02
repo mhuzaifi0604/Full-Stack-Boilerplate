@@ -89,6 +89,11 @@ const Login = () => {
                         </div>
                     )}
 
+                    <div className='flex flex-col w-full my-6 px-6 justify-start items-start'>
+                        <p><strong><i>Temp Email:</i></strong> admin@npmjs.com</p>
+                        <p><strong><i>Temp Pass:</i></strong> admin@786</p>
+                    </div>
+
                     {/* Form */}
                     <form onSubmit={handleSubmit} className="px-6 pb-4 space-y-8">
                         {/* Email Field */}
