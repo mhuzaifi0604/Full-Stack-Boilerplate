@@ -25,11 +25,34 @@
 
     const fs = require("fs-extra");
 
+
+    // Resolve template folder dynamically
+    let templateDir;
+
+    // Try __dirname first (works for local/dev)
+    const localTemplate = path.join(__dirname, "template");
+    if (fs.existsSync(localTemplate)) {
+        templateDir = localTemplate;
+    } else {
+        // Fallback for npx (temp folder)
+        const pkg = require.resolve("create-fullstack-boilerplate/package.json");
+        templateDir = path.join(path.dirname(pkg), "template");
+    }
+
+    if (!fs.existsSync(templateDir)) {
+        throw new Error(
+            "Template folder not found! Make sure it is included in package.json 'files' and published."
+        );
+    }
+
+    console.log("Using template folder:", templateDir);
+
+
     try {
         console.log("\n🎛️  Setting Up Full Stack Project...\n");
 
         const answers = await mainPrompts();
-        const templateDir = path.join(__dirname, "template");
+        // const templateDir = path.join(__dirname, "template");
         const targetDir = path.join(process.cwd(), answers.projectName);
 
         await copyProject(templateDir, targetDir);
