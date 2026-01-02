@@ -39,10 +39,10 @@ const AppContent = () => {
         ) : (
           <>
             {/* Redirect auth pages to dashboard */}
-            <Route path="/login" element={<Navigate to="/network" replace />} />
+            <Route path="/login" element={<Navigate to="/dashboard" replace />} />
 
             {/* Protected routes */}
-            <Route path="/" element={<Navigate to="/network" replace />} />
+            <Route path="/" element={<Navigate to="/dashboard" replace />} />
             <Route path="/dashboard" element={<ProtectedLayout component={Dashboard} />} />
             <Route path="/settings" element={<ProtectedLayout component={Settings} />} />
 

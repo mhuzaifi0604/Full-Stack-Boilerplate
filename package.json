@@ -1,10 +1,10 @@
 {
-  "name": "create-fullstack-app",
+  "name": "create-fullstack-boilerplate",
   "version": "1.0.0",
   "description": "A Full Stack Application Comprised of React for Frontend, Express & Sequelize with Node js for Backend to help developers get started on real implementation instead of spending time setting up projects.",
   "main": "index.js",
   "bin": {
-    "create-fullstack-app": "index.js"
+    "create-fullstack-boilerplate": "index.js"
   },
   "preferGlobal": false,
   "engines": {

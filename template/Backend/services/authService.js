@@ -8,8 +8,10 @@ const JWT_SECRET = process.env.JWT_SECRET;
 const users = [
     {
         id: '1',
-        email: 'dev@pmdpk.com',
-        password: '$2a$10$q62ZJw20xdKWvqtV7pFpbevPBysE9TvrLJX2WocDH.Clpk.43X.Ue', // 'pmd@786'
+        email: 'admin@npmjs.com',
+        password: '$2a$10$yFJXKioLIdFeUhsbat75..AEiEmyQhwM5Enj/9P3AXY5ReVC.lu1C'
+        // email: 'dev@pmdpk.com',
+        // password: '$2a$10$q62ZJw20xdKWvqtV7pFpbevPBysE9TvrLJX2WocDH.Clpk.43X.Ue', // 'pmd@786'
     },
     {
         id: '2',

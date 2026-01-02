@@ -47,9 +47,9 @@ const Sidebar = ({
                 <div className={`flex items-center justify-center w-full space-x-3 overflow-hidden transition-all duration-300 ${!isMobile && isCollapsed ? 'opacity-0 w-0' : 'opacity-100 w-auto'
                     }`}>
                     <img
-                        src={'/PMDLogo.png'}
-                        alt="PMD Logo"
-                        className='h-14 w-auto object-contain'
+                        src={'/pp.jpg'}
+                        alt="Cat"
+                        className='h-20 w-auto object-contain rounded-full'
                     />
                 </div>
 
