@@ -15,15 +15,15 @@
 
     // ---- Your existing create-project code ----
     const path = require("path");
-    const { ensure } = require("./lib/utils");
+    // const { ensure } = require("./lib/utils");
     const copyProject = require("./lib/copyProject");
-    const installDeps = require("./lib/installDeps");
+    const { runInstall, installDBDriver } = require("./lib/utils");
     const setupMainDB = require("./lib/setupMainDB");
     const setupExtraDB = require("./lib/setupExtraDB");
     const testDBConnection = require("./lib/testDBConnection");
     const { mainPrompts, extraDBPrompts } = require("./lib/prompts");
 
-    const fs = ensure("fs-extra");
+    const fs = require("fs-extra");
 
     try {
         console.log("\n🎛️  Setting Up Full Stack Project...\n");
@@ -34,11 +34,20 @@
 
         await copyProject(templateDir, targetDir);
         await setupMainDB(targetDir, answers.dbDialect);
-        await installDeps(targetDir);
+        console.log("➡️ Installing backend dependencies...");
+        await runInstall(path.join(targetDir, "backend"));
+
+        console.log("➡️ Installing frontend dependencies...");
+        await runInstall(path.join(targetDir, "frontend"));
+
+        console.log("➡️ Installing Your Db Dialect: ", answers.dbDialect)
+        await installDBDriver(path.join(targetDir, "backend"), answers.dbDialect);
+
 
         if (answers.addExtraDB) {
             const extraDB = await extraDBPrompts();
             console.log(`\n🔍 Testing connection for ${extraDB.dbKey}...`);
+            await installDBDriver(path.join(targetDir, "backend"), extraDB.dialect);
             const ok = await testDBConnection(targetDir, extraDB);
 
             if (ok) {
