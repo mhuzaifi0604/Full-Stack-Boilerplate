@@ -58,19 +58,19 @@
         await copyProject(templateDir, targetDir);
         await setupMainDB(targetDir, answers.dbDialect);
         console.log("➡️ Installing backend dependencies...");
-        await runInstall(path.join(targetDir, "backend"));
+        await runInstall(path.join(targetDir, "Backend"));
 
         console.log("➡️ Installing frontend dependencies...");
-        await runInstall(path.join(targetDir, "frontend"));
+        await runInstall(path.join(targetDir, "Frontend"));
 
         console.log("➡️ Installing Your Db Dialect: ", answers.dbDialect)
-        await installDBDriver(path.join(targetDir, "backend"), answers.dbDialect);
+        await installDBDriver(path.join(targetDir, "Backend"), answers.dbDialect);
 
 
         if (answers.addExtraDB) {
             const extraDB = await extraDBPrompts();
             console.log(`\n🔍 Testing connection for ${extraDB.dbKey}...`);
-            await installDBDriver(path.join(targetDir, "backend"), extraDB.dialect);
+            await installDBDriver(path.join(targetDir, "Backend"), extraDB.dialect);
             const ok = await testDBConnection(targetDir, extraDB);
 
             if (ok) {
