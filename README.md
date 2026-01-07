@@ -1,4 +1,4 @@
-# create-fullstack-app
+# create-fullstack-boilerplate
 
 A powerful CLI tool to quickly scaffold a complete fullstack application with React, Node.js, Express, and Sequelize with multi-database support. Get started building real features instead of spending time on project setup!
 
@@ -25,14 +25,14 @@ A powerful CLI tool to quickly scaffold a complete fullstack application with Re
 ### Create a New Project
 
 ```bash
-npx create-fullstack-app
+npx create-fullstack-boilerplate
 ```
 
 Or install globally:
 
 ```bash
-npm install -g create-fullstack-app
-create-fullstack-app
+npm install -g create-fullstack-boilerplate
+create-fullstack-boilerplate
 ```
 
 Follow the interactive prompts:
@@ -73,7 +73,7 @@ npm run dev
 Navigate to your project root and run:
 
 ```bash
-npx create-fullstack-app add-db
+npx create-fullstack-boilerplate add-db
 ```
 
 The CLI will prompt you for:
@@ -125,7 +125,7 @@ The CLI provides appropriate data types based on your selected database dialect:
 Navigate to your project root and run:
 
 ```bash
-npx create-fullstack-app add-route
+npx create-fullstack-boilerplate add-route
 ```
 
 The CLI will prompt you for:
