@@ -1,46 +1,86 @@
 {
   "name": "create-fullstack-boilerplate",
   "version": "2.1.11",
-  "description": "A Full Stack Application Comprised of React for Frontend, Express & Sequelize with Node js for Backend to help developers get started on real implementation instead of spending time setting up projects.",
+  "description": "A powerful CLI tool to generate fully configured full-stack applications with React frontend and Express backend. Includes authentication middleware, database configuration, protected routes, route-based Axios instances, and encryption setup - all ready with a single command.",
   "main": "index.js",
+  "types": "index.d.ts",
   "bin": {
     "create-fullstack-boilerplate": "index.js"
   },
   "preferGlobal": false,
-  "engines": {
-    "node": ">=20"
-  },
   "files": [
     "index.js",
-    "lib",
-    "template"
+    "lib/",
+    "template/",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mhuzaifi0604/react-boilerplate.git"
   },
   "keywords": [
     "fullstack",
     "boilerplate",
     "react",
-    "node",
-    "js",
-    "fullstack",
-    "app"
+    "express",
+    "nodejs",
+    "sequelize",
+    "authentication",
+    "cli-tool",
+    "project-generator",
+    "fullstack-template",
+    "react-boilerplate",
+    "express-boilerplate",
+    "auth-middleware",
+    "protected-routes",
+    "database-setup",
+    "axios-instance",
+    "encryption",
+    "backend-template",
+    "frontend-template",
+    "fullstack-app",
+    "react-express",
+    "node-boilerplate",
+    "jwt-auth",
+    "sequelize-setup",
+    "route-protection",
+    "muhammad-huzaifa",
+    "huzaifi0604",
+    "mhuzaifi0604",
+    "huzaifa",
+    "starter-template",
+    "project-scaffolding",
+    "developer-tools",
+    "fullstack-starter",
+    "create-fullstack-boilerplate",
+    "create-fullstack-app",
+    "create-fullstack-project"
   ],
+  "author": {
+    "name": "Muhammad Huzaifa",
+    "email": "huzzaifaasim@gmail.com",
+    "url": "https://github.com/mhuzaifi0604"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhuzaifi0604/Full-Stack-Boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mhuzaifi0604/Full-Stack-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/mhuzaifi0604/Full-Stack-Boilerplate#readme",
   "dependencies": {
     "cpy": "^12.1.0",
     "execa": "^5.1.1",
     "fs-extra": "^11.3.2",
     "inquirer": "^8.2.7"
   },
-  "author": "Muhammad Huzaifa",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mhuzaifi0604/react-boilerplate/issues"
+  "engines": {
+    "node": ">=14.0.0"
   },
-  "homepage": "https://github.com/mhuzaifi0604/react-boilerplate#readme"
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }

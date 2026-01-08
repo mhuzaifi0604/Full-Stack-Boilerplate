@@ -7,6 +7,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import Login from './pages/Login';
 import Settings from './pages/Settings';
 import Dashboard from './pages/Dashboard';
+import Architecture from './pages/Architecture';
 import NotFound from './pages/NotFound';
 
 // Reusable wrapper component for protected routes with layout
@@ -44,6 +45,7 @@ const AppContent = () => {
             {/* Protected routes */}
             <Route path="/" element={<Navigate to="/dashboard" replace />} />
             <Route path="/dashboard" element={<ProtectedLayout component={Dashboard} />} />
+            <Route path="/architecture" element={<ProtectedLayout component={Architecture} />} />
             <Route path="/settings" element={<ProtectedLayout component={Settings} />} />
 
             {/* 404 */}

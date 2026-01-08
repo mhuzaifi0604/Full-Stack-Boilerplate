@@ -1,7 +1,8 @@
 
 import {
     Network,
-    Settings
+    Settings,
+    Boxes
 } from 'lucide-react';
 
 export const sidebarRoutes = [
@@ -10,6 +11,13 @@ export const sidebarRoutes = [
         name: 'Dashboard',
         path: '/dashboard',
         icon: Network,
+        category: 'monitoring'
+    },
+    {
+        id: 'architecture',
+        name: 'Architecture',
+        path: '/architecture',
+        icon: Boxes,
         category: 'monitoring'
     },
     {
