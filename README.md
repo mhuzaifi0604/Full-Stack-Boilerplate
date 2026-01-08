@@ -1,6 +1,11 @@
 # create-fullstack-boilerplate
 
+[![npm version](https://badge.fury.io/js/create-fullstack-boilerplate.svg)](https://badge.fury.io/js/create-fullstack-boilerplate)
+[![Downloads](https://img.shields.io/npm/dm/create-fullstack-boilerplate.svg)](https://npmjs.org/package/create-fullstack-boilerplate)
+
 A powerful CLI tool to quickly scaffold a complete fullstack application with React, Node.js, Express, and Sequelize with multi-database support. Get started building real features instead of spending time on project setup!
+
+[Dashboard UI](https://raw.githubusercontent.com/mhuzaifi0604/Full-Stack-Boilerplate/main/dashUI.png)
 
 ## ✨ Features
 
