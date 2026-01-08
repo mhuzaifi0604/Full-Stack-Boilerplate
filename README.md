@@ -5,7 +5,7 @@
 
 A powerful CLI tool to quickly scaffold a complete fullstack application with React, Node.js, Express, and Sequelize with multi-database support. Get started building real features instead of spending time on project setup!
 
-[Dashboard UI](https://raw.githubusercontent.com/mhuzaifi0604/Full-Stack-Boilerplate/main/dashUI.png)
+![Dashboard UI](https://raw.githubusercontent.com/mhuzaifi0604/Full-Stack-Boilerplate/main/dashUI.png)
 
 ## ✨ Features
 
