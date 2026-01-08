@@ -69,7 +69,7 @@ const Login = () => {
                     {/* Header */}
                     <div className="px-6 pt-6 pb-4 text-center">
                         <div className="relative mb-4">
-                            <img src={'/PMDLogo.png'} alt="PMD Logo" className='w-max h-14 mx-auto' />
+                            <img src={'/pp.jpg'} alt="PMD Logo" className='w-max h-20 rounded-full shadow-md shadow-gray-400 mx-auto' />
                         </div>
 
                         <h1 className="text-2xl font-articulatcf-demibold text-gray-800 mb-1">Welcome Back</h1>

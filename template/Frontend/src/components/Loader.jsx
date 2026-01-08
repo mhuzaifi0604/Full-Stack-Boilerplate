@@ -6,7 +6,7 @@ const SpinningLoader = ({ size = 10 }) => {
     return (
         <div className={`flex flex-col justify-center items-center gap-4 h-full w-full ${isDark ? 'bg-gray-900' : 'bg-white'}`}>
             <img
-                src={'/PMDLogo.png'}
+                src={'/load.webp'}
                 alt="Loading..."
                 style={{ width: "auto", height: size }}
                 className="animate-pulse"
