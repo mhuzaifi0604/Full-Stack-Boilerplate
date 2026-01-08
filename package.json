@@ -1,6 +1,6 @@
 {
   "name": "create-fullstack-boilerplate",
-  "version": "2.1.11",
+  "version": "2.2.0",
   "description": "A powerful CLI tool to generate fully configured full-stack applications with React frontend and Express backend. Includes authentication middleware, database configuration, protected routes, route-based Axios instances, and encryption setup - all ready with a single command.",
   "main": "index.js",
   "types": "index.d.ts",
